@@ -1,7 +1,7 @@
 from django.db import models
 from django.db.models import Model, CharField, TextField, DateTimeField, ForeignKey
 from django.db.models import ManyToManyField, URLField, FloatField, IntegerField
-
+from django.db import models
 
 class Area(Model):
     name = CharField(max_length=30, verbose_name='Регион')

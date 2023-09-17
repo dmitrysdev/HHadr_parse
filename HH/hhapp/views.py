@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 from .forms import ReqForm
 from .models import Vacancy, Word, Wordskill
-from hhapp.management.commands.full_db import Command
+from HH.hhapp.management.commands.full_db import Command
 
 
 def start(request):

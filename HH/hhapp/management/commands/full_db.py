@@ -10,7 +10,7 @@ from requests import get
 from pycbrf import ExchangeRates
 from dotenv import load_dotenv
 
-from hhapp.models import Word, Wordskill, Skill, Vacancy, Schedule, Employer, Area, Type
+from HH.hhapp.models import Word, Wordskill, Skill, Vacancy, Schedule, Employer, Area, Type
 
 load_dotenv()
 
@@ -217,7 +217,7 @@ def parce(url, vacancy, pages='3', where='all'):
 
 
 def start(vacancy, pages='3', where='all'):
-    sk1 = parce_sup(vacancy, pages=pages, where=where)
+    #sk1 = parce_sup(vacancy, pages=pages, where=where)
     sk2 = parce(url='https://api.hh.ru/vacancies', vacancy=vacancy, pages=pages, where=where)
     sk3 = parce(url='https://api.zarplata.ru/vacancies', vacancy=vacancy, pages=pages, where=where)
     result = {'keywords': vacancy}

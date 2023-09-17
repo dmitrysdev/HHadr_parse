@@ -1,6 +1,7 @@
-from django.urls import path
-from hhapp import views
-
+from django.contrib import admin
+from django.urls import path, include
+import HH.hhapp.views
+from HH.hhapp import views
 
 app_name = 'hhapp'
 
